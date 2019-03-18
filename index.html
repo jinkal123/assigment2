@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Jinkal Shekhada</a>
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="bootstrap.html">Bootstrap</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="jquery.html">jquery</a>
+    </li>
+  </ul>
+</nav>
+<div class="container">
+  <div class="title">
+    <h1>Carousel Slider</h1>
+    <h3>A slideshow component for cycling through elements—images or slides of text—like a carousel.</h3>
+  </div>
+  <p>The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.</p><br>
+  <p>In browsers where the Page Visibility API is supported, the carousel will avoid sliding when the webpage is not visible to the user (such as when the browser tab is inactive, the browser window is minimized, etc.).</p><br>
+  <p>Please be aware that nested carousels are not supported, and carousels are generally not compliant with accessibility standards.</p><br>
+  <h2>Example</h2>
+   <div class="card">
+    <div class="card-body">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="slide1.jpg" alt="First slide" height="500">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="slide2.jpg" alt="Second slide" height="500">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="slide3.jpeg" alt="Third slide" height="500">
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+<div class="card-footer">
+      <span><code><</code><code>div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"></code></span><br>
+      <span><code><</code><code>div class="carousel-inner"></code></span><br>
+      <span><code><</code><code>div class="carousel-item active"></code></span>
+      <span><code><</code><code>img class="d-block w-100" src="slide1.jpg" alt="First slide" height="500"></code></span><br>
+      <span><code><</code><code>/div></code></span><br>
+      <span><code><</code><code>div class="carousel-item"></code></span><br>
+      <span><code><</code><code>img class="d-block w-100" src="slide2.jpg" alt="Second slide" height="500"></code></span><br>
+      <span><code><</code><code>/div></code></span><br>
+      <span><code><</code><code>div class="carousel-item"></code></span><br>
+      <span><code><</code><code>img class="d-block w-100" src="slide3.jpg" alt="Second slide" height="500"></code></span><br>
+       <span><code><</code><code>/div></code></span><br>
+        <span><code><</code><code>/div></code></span><br>
+</div>
+  <div class="title">
+  <h1>Dropdowns</h1>
+  <h3>Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.</h3><br>
+  </div>
+  <h2>Overview</h2>
+  <p>Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included     Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is an intentional design decision.
+
+    Dropdowns are built on a third party library, Popper.js, which provides dynamic positioning and viewport detection. Be sure to include popper.min.js before Bootstrap’s JavaScript or use bootstrap.bundle.min.js / bootstrap.bundle.js which contains Popper.js. Popper.js isn’t used to position dropdowns in navbars though as dynamic positioning isn’t required.
+
+      If you’re building our JavaScript from source, it requires util.js.</p>
+  <h2>Single button dropdowns</h2>
+  <p>Any single .btn can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to work with either button elements:</p>
+  <div class="card">
+    <div class="card-body">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Home</a>
+        <a class="dropdown-item" href="#">Bootstrap</a>
+        <a class="dropdown-item" href="#">Jquary</a>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <span><code><</code><code>div</code></span>
+    <span><code>class="dropdown"></code><br>
+    <span><code><</code><code>button</code></span>
+    <span><code>class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></code></span><br>
+    <span>Dropdown button</span><br>
+    <span><code><</code><code>/button></code></span><br>
+    <span><code><</code><code>div</code></span>
+    <span><code>="dropdown-menu" aria-labelledby="dropdownMenuButton"></code></span><br>
+    <span><code><</code><code>a class="dropdown-item" href="#">Home</code></span>
+    <span><code><</code><code>/a></code></span><br>
+    <span><code><</code><code>a class="dropdown-item" href="#">Bootstrap</code><code><</code><code>/a></code></span><br>
+    <span><code><</code><code>a class="dropdown-item" href="#">Jquary</code><code><</code><code>/a></code></span><br>
+    <span><code><</code><code>/div></code></span><br>
+    <span><code><</code><code>/div></code></span><br>
+    <span><code><</code><code>/div></code></span><br>
+  </div>
+</div>
+</div>
+</body>
+</html>
